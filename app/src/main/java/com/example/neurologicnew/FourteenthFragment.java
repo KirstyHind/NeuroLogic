@@ -1,0 +1,39 @@
+package com.example.neurologicnew;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
+
+import com.example.neurologicnew.databinding.FragmentFourteenthBinding;
+
+public class FourteenthFragment extends Fragment {
+
+    private FragmentFourteenthBinding binding;
+    private Handler handler;
+
+    @Override
+    public View onCreateView(
+            @NonNull LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState
+    ) {
+
+        binding = FragmentFourteenthBinding.inflate(inflater, container, false);
+        return binding.getRoot();
+    }
+
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        binding.imageView5.setOnClickListener(view1 -> NavHostFragment.findNavController(FourteenthFragment.this)
+                .navigate(R.id.fourteenth_to_eleventh));
+
+        binding.imageView26.setOnClickListener(view1 -> NavHostFragment.findNavController(FourteenthFragment.this)
+                .navigate(R.id.fourteenth_to_thirtyfifth));
+    }
+}

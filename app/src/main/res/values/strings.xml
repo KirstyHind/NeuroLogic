@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">NeuroLogic New</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="remember_the_order">Remember the Order!</string>
+    <string name="what_order">What was the Order?</string>
+    <string name="memory_fruit">Memory: Fruit</string>
+    <string name="top_bar">top_bar</string>
+    <string name="cross">cross</string>
+    <string name="orange">orange</string>
+    <string name="android_buttons">android_buttons</string>
+    <string name="banana">banana</string>
+    <string name="lemon">lemon</string>
+    <string name="button">Check Answer</string>
+    <string name="select_activity">Select Activity</string>
+    <string name="memory">Memory</string>
+    <string name="patterns">Patterns</string>
+    <string name="word_games">Word Games</string>
+    <string name="maths_games">Maths Games</string>
+    <string name="sudoku">Sudoku</string>
+    <string name="random">Random</string>
+    <string name="scrabble_words">Scrabble Words</string>
+    <string name="make_word">What\'s the Best Word You Can Make?</string>
+    <string name="well_done">Well Done!</string>
+    <string name="quick_anagrams">Quick Anagrams</string>
+    <string name="anagram_1">W E I S H R D S H</string>
+    <string name="correct">Correct!</string>
+    <string name="anagram_2">T U N C I R A</string>
+    <string name="anagram_3">E P T A N U</string>
+    <string name="what_pattern">What Comes Next in the Following Pattern?</string>
+    <string name="pattern_completion">Pattern Completion</string>
+</resources>

@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eleventhFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.neurologicnew.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/first_to_second"
+            app:destination="@id/SecondFragment"
+            app:launchSingleTop="false" />
+        <action
+            android:id="@+id/first_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.neurologicnew.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/second_to_third"
+            app:destination="@id/ThirdFragment" />
+        <action
+            android:id="@+id/second_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.example.neurologicnew.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/third_to_fourth"
+            app:destination="@id/FourthFragment" />
+        <action
+            android:id="@+id/third_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FourthFragment"
+        android:name="com.example.neurologicnew.FourthFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/fragment_fourth" >
+        <action
+            android:id="@+id/fourth_to_fifth"
+            app:destination="@id/FifthFragment" />
+        <action
+            android:id="@+id/fourth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FifthFragment"
+        android:name="com.example.neurologicnew.FifthFragment"
+        android:label="fragment_fifth"
+        tools:layout="@layout/fragment_fifth" >
+        <action
+            android:id="@+id/fifth_to_sixth"
+            app:destination="@id/SixthFragment" />
+        <action
+            android:id="@+id/fifth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SixthFragment"
+        android:name="com.example.neurologicnew.SixthFragment"
+        android:label="fragment_sixth"
+        tools:layout="@layout/fragment_sixth">
+        <action
+            android:id="@+id/sixth_to_seventh"
+            app:destination="@id/SeventhFragment" />
+        <action
+            android:id="@+id/sixth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SeventhFragment"
+        android:name="com.example.neurologicnew.SeventhFragment"
+        android:label="fragment_seventh"
+        tools:layout="@layout/fragment_seventh">
+        <action
+            android:id="@+id/seventh_to_eighth"
+            app:destination="@id/eighthFragment" />
+        <action
+            android:id="@+id/seventh_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eighthFragment"
+        android:name="com.example.neurologicnew.EighthFragment"
+        android:label="fragment_eighth"
+        tools:layout="@layout/fragment_eighth">
+        <action
+            android:id="@+id/eighth_to_ninth"
+            app:destination="@id/ninthFragment" />
+        <action
+            android:id="@+id/eighth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ninthFragment"
+        android:name="com.example.neurologicnew.NinthFragment"
+        android:label="fragment_ninth"
+        tools:layout="@layout/fragment_ninth">
+        <action
+            android:id="@+id/ninth_to_tenth"
+            app:destination="@id/tenthFragment" />
+        <action
+            android:id="@+id/ninth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tenthFragment"
+        android:name="com.example.neurologicnew.TenthFragment"
+        android:label="fragment_tenth"
+        tools:layout="@layout/fragment_tenth">
+        <action
+            android:id="@+id/tenth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eleventhFragment"
+        android:name="com.example.neurologicnew.EleventhFragment"
+        android:label="EleventhFragment"
+        tools:layout="@layout/fragment_eleventh">
+        <action
+            android:id="@+id/eleventh_to_first"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/eleventh_to_twelth"
+            app:destination="@id/twelthFragment" />
+        <action
+            android:id="@+id/eleventh_to_thirteenth"
+            app:destination="@id/thirteenthFragment" />
+        <action
+            android:id="@+id/eleventh_to_fourteenth"
+            app:destination="@id/fourteenthFragment" />
+        <action
+            android:id="@+id/eleventh_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/eleventh_to_sixteenth"
+            app:destination="@id/sixteenthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twelthFragment"
+        android:name="com.example.neurologicnew.TwelthFragment"
+        android:label="TwelthFragment"
+        tools:layout="@layout/fragment_twelth" >
+        <action
+            android:id="@+id/twelth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirteenthFragment"
+        android:name="com.example.neurologicnew.ThirteenthFragment"
+        android:label="ThirteenthFragment"
+        tools:layout="@layout/fragment_thirteenth" >
+        <action
+            android:id="@+id/thirteenth_to_first"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/thirteenth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourteenthFragment"
+        android:name="com.example.neurologicnew.FourteenthFragment"
+        android:label="FourteenthFragment"
+        tools:layout="@layout/fragment_fourteenth" >
+        <action
+            android:id="@+id/fourteenth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+        <action
+            android:id="@+id/fourteenth_to_thirtyfifth"
+            app:destination="@id/thirtyFifthFragment" />
+        <action
+            android:id="@+id/action_fourteenthFragment_to_thirtyFifthFragment2"
+            app:destination="@id/thirtyFifthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifteenthFragment"
+        android:name="com.example.neurologicnew.FifteenthFragment"
+        android:label="FifteenthFragment"
+        tools:layout="@layout/fragment_fifteenth" >
+        <action
+            android:id="@+id/fifteenth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+        <action
+            android:id="@+id/fifteenth_to_seventeenth"
+            app:destination="@id/seventeenthFragment" />
+        <action
+            android:id="@+id/fifteenth_to_twentyfifth"
+            app:destination="@id/twentyFifthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixteenthFragment"
+        android:name="com.example.neurologicnew.SixteenthFragment"
+        android:label="SixteenthFragment"
+        tools:layout="@layout/fragment_sixteenth" >
+        <action
+            android:id="@+id/sixteenth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seventeenthFragment"
+        android:name="com.example.neurologicnew.SeventeenthFragment"
+        android:label="SeventeenthFragment"
+        tools:layout="@layout/fragment_seventeenth">
+        <action
+            android:id="@+id/seventeenth_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/seventeenth_to_eighteenth"
+            app:destination="@id/eighteenthFragment" />
+        <action
+            android:id="@+id/seventeenth_to_nineteenth"
+            app:destination="@id/nineteenthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eighteenthFragment"
+        android:name="com.example.neurologicnew.EighteenthFragment"
+        android:label="EighteenthFragment"
+        tools:layout="@layout/fragment_eighteenth" >
+        <action
+            android:id="@+id/eighteenth_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/eighteenth_to_nineteenth"
+            app:destination="@id/nineteenthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nineteenthFragment"
+        android:name="com.example.neurologicnew.NineteenthFragment"
+        android:label="NineteenthFragment"
+        tools:layout="@layout/fragment_nineteenth" >
+        <action
+            android:id="@+id/nineteenth_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/nineteenth_to_twentieth"
+            app:destination="@id/twentiethFragment" />
+        <action
+            android:id="@+id/nineteenth_to_twentysecond"
+            app:destination="@id/twentySecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentiethFragment"
+        android:name="com.example.neurologicnew.TwentiethFragment"
+        android:label="TwentiethFragment"
+        tools:layout="@layout/fragment_twentieth">
+        <action
+            android:id="@+id/twentieth_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/twentieth_to_twentyfirst"
+            app:destination="@id/twentyFirstFragment" />
+        <action
+            android:id="@+id/twentieth_to_twentysecond"
+            app:destination="@id/twentySecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentyFirstFragment"
+        android:name="com.example.neurologicnew.TwentyFirstFragment"
+        android:label="TwentyFirstFragment"
+        tools:layout="@layout/fragment_twenty_first" >
+        <action
+            android:id="@+id/twentyfirst_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/twentyfirst_to_twentysecond"
+            app:destination="@id/twentySecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentySecondFragment"
+        android:name="com.example.neurologicnew.TwentySecondFragment"
+        android:label="TwentySecondFragment"
+        tools:layout="@layout/fragment_twenty_second">
+        <action
+            android:id="@+id/twentysecond_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/twentysecond_to_twentythird"
+            app:destination="@id/twentyThirdFragment" />
+        <action
+            android:id="@+id/twentysecond_to_twentyfourth"
+            app:destination="@id/twentyFourthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentyThirdFragment"
+        android:name="com.example.neurologicnew.TwentyThirdFragment"
+        android:label="TwentyThirdFragment"
+        tools:layout="@layout/fragment_twenty_third" >
+        <action
+            android:id="@+id/twentythird_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/twentythird_to_twentyfourth"
+            app:destination="@id/twentyFourthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentyFourthFragment"
+        android:name="com.example.neurologicnew.TwentyFourthFragment"
+        android:label="TwentyFourthFragment"
+        tools:layout="@layout/fragment_twenty_fourth" >
+        <action
+            android:id="@+id/twentyfourth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentyFifthFragment"
+        android:name="com.example.neurologicnew.TwentyFifthFragment"
+        android:label="TwentyFifthFragment"
+        tools:layout="@layout/fragment_twenty_fifth" >
+        <action
+            android:id="@+id/twentyfifth_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/twentyfifth_to_twentysixth"
+            app:destination="@id/twentySixthFragment" />
+        <action
+            android:id="@+id/twentyfifth_to_twentyeighth"
+            app:destination="@id/twentyEighthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentySixthFragment"
+        android:name="com.example.neurologicnew.TwentySixthFragment"
+        android:label="TwentySixthFragment"
+        tools:layout="@layout/fragment_twenty_sixth" >
+        <action
+            android:id="@+id/twentysixth_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/twentysixth_to_twentyseventh"
+            app:destination="@id/twentySeventhFragment" />
+        <action
+            android:id="@+id/twentysixth_to_twentyeighth"
+            app:destination="@id/twentyEighthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentySeventhFragment"
+        android:name="com.example.neurologicnew.TwentySeventhFragment"
+        android:label="TwentySeventhFragment"
+        tools:layout="@layout/fragment_twenty_seventh" >
+        <action
+            android:id="@+id/twentyseventh_to_twentyeighth"
+            app:destination="@id/twentyEighthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentyEighthFragment"
+        android:name="com.example.neurologicnew.TwentyEighthFragment"
+        android:label="TwentyEighthFragment"
+        tools:layout="@layout/fragment_twenty_eighth" >
+        <action
+            android:id="@+id/twentyeighth_to_fifteen"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/action_twentyEighthFragment_self"
+            app:destination="@id/twentyEighthFragment" />
+        <action
+            android:id="@+id/twentyeighth_to_twentyninth"
+            app:destination="@id/twentyNinthFragment" />
+        <action
+            android:id="@+id/twentyeighth_to_thirtyfirst"
+            app:destination="@id/thirtyFirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentyNinthFragment"
+        android:name="com.example.neurologicnew.TwentyNinthFragment"
+        android:label="TwentyNinthFragment"
+        tools:layout="@layout/fragment_twenty_ninth" >
+        <action
+            android:id="@+id/twentyninth_to_fifteen"
+            app:destination="@id/fifteenthFragment" />
+        <action
+            android:id="@+id/twentyninth_to_thirtieth"
+            app:destination="@id/thirtiethFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtiethFragment"
+        android:name="com.example.neurologicnew.ThirtiethFragment"
+        android:label="ThirtiethFragment"
+        tools:layout="@layout/fragment_thirtieth" >
+        <action
+            android:id="@+id/thirtieth_to_thirtyfirst"
+            app:destination="@id/thirtyFirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtyFirstFragment"
+        android:name="com.example.neurologicnew.ThirtyFirstFragment"
+        android:label="ThirtyFirstFragment"
+        tools:layout="@layout/fragment_thirty_first" >
+        <action
+            android:id="@+id/thirtyfirst_to_thirtysecond"
+            app:destination="@id/thirtySecondFragment" />
+        <action
+            android:id="@+id/thirtyfirst_to_thirtyfourth"
+            app:destination="@id/thirtyFourthFragment" />
+        <action
+            android:id="@+id/thirtyfirst_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtySecondFragment"
+        android:name="com.example.neurologicnew.ThirtySecondFragment"
+        android:label="ThirtySecondFragment"
+        tools:layout="@layout/fragment_thirty_second" >
+        <action
+            android:id="@+id/thirtysecond_to_thirtythird"
+            app:destination="@id/thirtyThirdFragment" />
+        <action
+            android:id="@+id/thirtysecond_to_thirtyfourth"
+            app:destination="@id/thirtyFourthFragment" />
+        <action
+            android:id="@+id/thirtysecond_to_fifteenth"
+            app:destination="@id/fifteenthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtyThirdFragment"
+        android:name="com.example.neurologicnew.ThirtyThirdFragment"
+        android:label="ThirtyThirdFragment"
+        tools:layout="@layout/fragment_thirty_third" >
+        <action
+            android:id="@+id/thirtythird_to_thirtyfourth"
+            app:destination="@id/thirtyFourthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtyFourthFragment"
+        android:name="com.example.neurologicnew.ThirtyFourthFragment"
+        android:label="ThirtyFourthFragment"
+        tools:layout="@layout/fragment_thirty_fourth" >
+        <action
+            android:id="@+id/thirtyfourth_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtyFifthFragment"
+        android:name="com.example.neurologicnew.ThirtyFifthFragment"
+        android:label="ThirtyFifthFragment"
+        tools:layout="@layout/fragment_thirty_fifth" >
+        <action
+            android:id="@+id/thirtyfifth_to_fourteenth"
+            app:destination="@id/fourteenthFragment" />
+        <action
+            android:id="@+id/thirtyfifth_to_thirtysixth"
+            app:destination="@id/thirtySixthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtySixthFragment"
+        android:name="com.example.neurologicnew.ThirtySixthFragment"
+        android:label="ThirtySixthFragment"
+        tools:layout="@layout/fragment_thirty_sixth" >
+        <action
+            android:id="@+id/thirtysixth_to_thirtyseventh"
+            app:destination="@id/thirtySeventhFragment" />
+        <action
+            android:id="@+id/thirtysixth_to_fourteenth"
+            app:destination="@id/fourteenthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtySeventhFragment"
+        android:name="com.example.neurologicnew.ThirtySeventhFragment"
+        android:label="ThirtySeventhFragment"
+        tools:layout="@layout/fragment_thirty_seventh" >
+        <action
+            android:id="@+id/thirtyseventh_to_fortyone"
+            app:destination="@id/fortyOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtyEighthFragment"
+        android:name="com.example.neurologicnew.ThirtyEighthFragment"
+        android:label="ThirtyEighthFragment"
+        tools:layout="@layout/fragment_thirty_eighth" >
+        <action
+            android:id="@+id/thirtyeighth_to_fourteenth"
+            app:destination="@id/fourteenthFragment" />
+        <action
+            android:id="@+id/thirtyeighth_to_thirtyninth"
+            app:destination="@id/thirtyNinthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtyNinthFragment"
+        android:name="com.example.neurologicnew.ThirtyNinthFragment"
+        android:label="ThirtyNinthFragment"
+        tools:layout="@layout/fragment_thirty_ninth" >
+        <action
+            android:id="@+id/thirtyninth_to_fourteenth"
+            app:destination="@id/fourteenthFragment" />
+        <action
+            android:id="@+id/thirtyninth_to_fortieth"
+            app:destination="@id/fortiethFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fortiethFragment"
+        android:name="com.example.neurologicnew.FortiethFragment"
+        android:label="FortiethFragment"
+        tools:layout="@layout/fragment_fortieth" >
+        <action
+            android:id="@+id/fortieth_to_fourtyfour"
+            app:destination="@id/fortyFourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fortyOneFragment"
+        android:name="com.example.neurologicnew.FortyOneFragment"
+        android:label="FortyOneFragment"
+        tools:layout="@layout/fragment_forty_one" >
+        <action
+            android:id="@+id/fortyone_to_fourteenth"
+            app:destination="@id/fourteenthFragment" />
+        <action
+            android:id="@+id/fortyone_to_fortytwo"
+            app:destination="@id/fortyTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fortyTwoFragment"
+        android:name="com.example.neurologicnew.FortyTwoFragment"
+        android:label="FortyTwoFragment"
+        tools:layout="@layout/fragment_forty_two" >
+        <action
+            android:id="@+id/fortytwo_to_fourteenth"
+            app:destination="@id/fourteenthFragment" />
+        <action
+            android:id="@+id/fortytwo_to_fortythree"
+            app:destination="@id/fortyThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fortyThreeFragment"
+        android:name="com.example.neurologicnew.FortyThreeFragment"
+        android:label="FortyThreeFragment"
+        tools:layout="@layout/fragment_forty_three" >
+        <action
+            android:id="@+id/fortythree_to_thirtyeight"
+            app:destination="@id/thirtyEighthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fortyFourFragment"
+        android:name="com.example.neurologicnew.FortyFourFragment"
+        android:label="FortyFourFragment"
+        tools:layout="@layout/fragment_forty_fourth" >
+        <action
+            android:id="@+id/fourtyfour_to_eleventh"
+            app:destination="@id/eleventhFragment" />
+    </fragment>
+</navigation>
