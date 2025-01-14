@@ -3,548 +3,527 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/eleventhFragment">
+    app:startDestination="@id/homeScreen">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.neurologicnew.FirstFragment"
+        android:id="@+id/MemoryFruitOne"
+        android:name="com.example.neurologicnew.MemoryFruitOne"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/memory_fruit_one">
 
         <action
-            android:id="@+id/first_to_second"
-            app:destination="@id/SecondFragment"
+            android:id="@+id/fruitone_to_fruittwo"
+            app:destination="@id/MemoryFruitTwo"
             app:launchSingleTop="false" />
         <action
-            android:id="@+id/first_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/fruitone_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.neurologicnew.SecondFragment"
+        android:id="@+id/MemoryFruitTwo"
+        android:name="com.example.neurologicnew.MemoryFruitTwo"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/memory_fruit_two">
         <action
-            android:id="@+id/second_to_third"
-            app:destination="@id/ThirdFragment" />
+            android:id="@+id/fruittwo_to_fruitthree"
+            app:destination="@id/MemoryFruitThree" />
         <action
             android:id="@+id/second_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/ThirdFragment"
-        android:name="com.example.neurologicnew.ThirdFragment"
+        android:id="@+id/MemoryFruitThree"
+        android:name="com.example.neurologicnew.MemoryFruitThree"
         android:label="fragment_third"
-        tools:layout="@layout/fragment_third" >
+        tools:layout="@layout/memory_fruit_three" >
         <action
-            android:id="@+id/third_to_fourth"
-            app:destination="@id/FourthFragment" />
+            android:id="@+id/fruitthree_to_fruitfour"
+            app:destination="@id/MemoryFruitFour" />
         <action
             android:id="@+id/third_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/FourthFragment"
-        android:name="com.example.neurologicnew.FourthFragment"
+        android:id="@+id/MemoryFruitFour"
+        android:name="com.example.neurologicnew.MemoryFruitFour"
         android:label="fragment_fourth"
-        tools:layout="@layout/fragment_fourth" >
+        tools:layout="@layout/memory_fruit_four" >
         <action
-            android:id="@+id/fourth_to_fifth"
-            app:destination="@id/FifthFragment" />
+            android:id="@+id/fruitfour_to_fruitorder1"
+            app:destination="@id/FruitOrderOne" />
         <action
             android:id="@+id/fourth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/FifthFragment"
-        android:name="com.example.neurologicnew.FifthFragment"
+        android:id="@+id/FruitOrderOne"
+        android:name="com.example.neurologicnew.FruitOrderOne"
         android:label="fragment_fifth"
-        tools:layout="@layout/fragment_fifth" >
+        tools:layout="@layout/fruit_order_one" >
         <action
-            android:id="@+id/fifth_to_sixth"
-            app:destination="@id/SixthFragment" />
+            android:id="@+id/orderone_to_ordertwo"
+            app:destination="@id/FruitOrderTwo" />
         <action
-            android:id="@+id/fifth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/orderone_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/SixthFragment"
-        android:name="com.example.neurologicnew.SixthFragment"
+        android:id="@+id/FruitOrderTwo"
+        android:name="com.example.neurologicnew.FruitOrderTwo"
         android:label="fragment_sixth"
-        tools:layout="@layout/fragment_sixth">
+        tools:layout="@layout/fruit_order_two">
         <action
-            android:id="@+id/sixth_to_seventh"
-            app:destination="@id/SeventhFragment" />
+            android:id="@+id/ordertwo_to_orderthree"
+            app:destination="@id/FruitOrderThree" />
         <action
-            android:id="@+id/sixth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/ordertwo_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/SeventhFragment"
-        android:name="com.example.neurologicnew.SeventhFragment"
+        android:id="@+id/FruitOrderThree"
+        android:name="com.example.neurologicnew.FruitOrderThree"
         android:label="fragment_seventh"
-        tools:layout="@layout/fragment_seventh">
+        tools:layout="@layout/fruit_order_three">
         <action
-            android:id="@+id/seventh_to_eighth"
-            app:destination="@id/eighthFragment" />
+            android:id="@+id/orderthree_to_orderfour"
+            app:destination="@id/FruitOrderFour" />
         <action
-            android:id="@+id/seventh_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/orderthree_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/eighthFragment"
-        android:name="com.example.neurologicnew.EighthFragment"
+        android:id="@+id/FruitOrderFour"
+        android:name="com.example.neurologicnew.FruitOrderFour"
         android:label="fragment_eighth"
-        tools:layout="@layout/fragment_eighth">
+        tools:layout="@layout/fruit_order_four">
         <action
-            android:id="@+id/eighth_to_ninth"
-            app:destination="@id/ninthFragment" />
+            android:id="@+id/orderfour_to_orderfive"
+            app:destination="@id/FruitOrderFive" />
         <action
-            android:id="@+id/eighth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/orderfour_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/ninthFragment"
-        android:name="com.example.neurologicnew.NinthFragment"
+        android:id="@+id/FruitOrderFive"
+        android:name="com.example.neurologicnew.FruitOrderFive"
         android:label="fragment_ninth"
-        tools:layout="@layout/fragment_ninth">
+        tools:layout="@layout/fruit_order_five">
         <action
-            android:id="@+id/ninth_to_tenth"
-            app:destination="@id/tenthFragment" />
+            android:id="@+id/orderfive_to_correct"
+            app:destination="@id/FruitOrderCorrect" />
         <action
-            android:id="@+id/ninth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/orderfive_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/tenthFragment"
-        android:name="com.example.neurologicnew.TenthFragment"
+        android:id="@+id/FruitOrderCorrect"
+        android:name="com.example.neurologicnew.FruitOrderCorrect"
         android:label="fragment_tenth"
-        tools:layout="@layout/fragment_tenth">
+        tools:layout="@layout/fruit_order_correct">
         <action
-            android:id="@+id/tenth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/correctfruit_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/eleventhFragment"
-        android:name="com.example.neurologicnew.EleventhFragment"
+        android:id="@+id/homeScreen"
+        android:name="com.example.neurologicnew.HomeScreen"
         android:label="EleventhFragment"
-        tools:layout="@layout/fragment_eleventh">
+        tools:layout="@layout/home_screen">
         <action
-            android:id="@+id/eleventh_to_first"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/home_to_maths"
+            app:destination="@id/MenuMathsGames" />
         <action
-            android:id="@+id/eleventh_to_twelth"
-            app:destination="@id/twelthFragment" />
+            android:id="@+id/home_to_memory"
+            app:destination="@id/menuMemoryGames" />
         <action
-            android:id="@+id/eleventh_to_thirteenth"
-            app:destination="@id/thirteenthFragment" />
+            android:id="@+id/home_to_patterns"
+            app:destination="@id/menuPatternsGames" />
         <action
-            android:id="@+id/eleventh_to_fourteenth"
-            app:destination="@id/fourteenthFragment" />
+            android:id="@+id/home_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/eleventh_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
-        <action
-            android:id="@+id/eleventh_to_sixteenth"
-            app:destination="@id/sixteenthFragment" />
+            android:id="@+id/home_to_sudoku"
+            app:destination="@id/MenuSudokuGames" />
     </fragment>
     <fragment
-        android:id="@+id/twelthFragment"
-        android:name="com.example.neurologicnew.TwelthFragment"
+        android:id="@+id/MenuMathsGames"
+        android:name="com.example.neurologicnew.MenuMathsGames"
         android:label="TwelthFragment"
-        tools:layout="@layout/fragment_twelth" >
+        tools:layout="@layout/menu_maths_games" >
         <action
-            android:id="@+id/twelth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/maths_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/thirteenthFragment"
-        android:name="com.example.neurologicnew.ThirteenthFragment"
+        android:id="@+id/menuMemoryGames"
+        android:name="com.example.neurologicnew.MenuMemoryGames"
         android:label="ThirteenthFragment"
-        tools:layout="@layout/fragment_thirteenth" >
+        tools:layout="@layout/menu_memory_games" >
         <action
-            android:id="@+id/thirteenth_to_first"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/memory_to_fruitone"
+            app:destination="@id/MemoryFruitOne" />
         <action
-            android:id="@+id/thirteenth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/memory_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/fourteenthFragment"
-        android:name="com.example.neurologicnew.FourteenthFragment"
+        android:id="@+id/menuPatternsGames"
+        android:name="com.example.neurologicnew.MenuPatternsGames"
         android:label="FourteenthFragment"
-        tools:layout="@layout/fragment_fourteenth" >
+        tools:layout="@layout/menu_patterns_games" >
         <action
-            android:id="@+id/fourteenth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/patterns_to_home"
+            app:destination="@id/homeScreen" />
         <action
-            android:id="@+id/fourteenth_to_thirtyfifth"
-            app:destination="@id/thirtyFifthFragment" />
-        <action
-            android:id="@+id/action_fourteenthFragment_to_thirtyFifthFragment2"
-            app:destination="@id/thirtyFifthFragment" />
+            android:id="@+id/patterns_to_graphonea"
+            app:destination="@id/PatternGraphOneA" />
     </fragment>
     <fragment
-        android:id="@+id/fifteenthFragment"
-        android:name="com.example.neurologicnew.FifteenthFragment"
+        android:id="@+id/MenuWordGames"
+        android:name="com.example.neurologicnew.MenuWordGames"
         android:label="FifteenthFragment"
-        tools:layout="@layout/fragment_fifteenth" >
+        tools:layout="@layout/menu_word_games" >
         <action
-            android:id="@+id/fifteenth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/word_to_home"
+            app:destination="@id/homeScreen" />
         <action
-            android:id="@+id/fifteenth_to_seventeenth"
-            app:destination="@id/seventeenthFragment" />
+            android:id="@+id/word_to_scrabble"
+            app:destination="@id/ScrabbleOneA" />
         <action
-            android:id="@+id/fifteenth_to_twentyfifth"
-            app:destination="@id/twentyFifthFragment" />
+            android:id="@+id/word_to_anagrams"
+            app:destination="@id/anagramOneA" />
     </fragment>
     <fragment
-        android:id="@+id/sixteenthFragment"
-        android:name="com.example.neurologicnew.SixteenthFragment"
+        android:id="@+id/MenuSudokuGames"
+        android:name="com.example.neurologicnew.MenuSudokuGames"
         android:label="SixteenthFragment"
-        tools:layout="@layout/fragment_sixteenth" >
+        tools:layout="@layout/menu_sudoku_games" >
         <action
-            android:id="@+id/sixteenth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/sudoku_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/seventeenthFragment"
-        android:name="com.example.neurologicnew.SeventeenthFragment"
+        android:id="@+id/ScrabbleOneA"
+        android:name="com.example.neurologicnew.WordScrabbleOneA"
         android:label="SeventeenthFragment"
-        tools:layout="@layout/fragment_seventeenth">
+        tools:layout="@layout/word_scrabble_one_a">
         <action
-            android:id="@+id/seventeenth_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/scrabbleonea_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/seventeenth_to_eighteenth"
-            app:destination="@id/eighteenthFragment" />
+            android:id="@+id/scrabbleonea_to_scrabbleoneb"
+            app:destination="@id/ScrabbleOneB" />
         <action
-            android:id="@+id/seventeenth_to_nineteenth"
-            app:destination="@id/nineteenthFragment" />
+            android:id="@+id/scrabbleonea_to_scrabbletwoa"
+            app:destination="@id/ScrabbleTwoA" />
     </fragment>
     <fragment
-        android:id="@+id/eighteenthFragment"
-        android:name="com.example.neurologicnew.EighteenthFragment"
+        android:id="@+id/ScrabbleOneB"
+        android:name="com.example.neurologicnew.WordScrabbleOneB"
         android:label="EighteenthFragment"
-        tools:layout="@layout/fragment_eighteenth" >
+        tools:layout="@layout/word_scrabble_one_b" >
         <action
-            android:id="@+id/eighteenth_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/scrabbleoneb_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/eighteenth_to_nineteenth"
-            app:destination="@id/nineteenthFragment" />
+            android:id="@+id/scrabbleoneb_to_scrabbletwoa"
+            app:destination="@id/ScrabbleTwoA" />
     </fragment>
     <fragment
-        android:id="@+id/nineteenthFragment"
-        android:name="com.example.neurologicnew.NineteenthFragment"
+        android:id="@+id/ScrabbleTwoA"
+        android:name="com.example.neurologicnew.WordScrabbleTwoA"
         android:label="NineteenthFragment"
-        tools:layout="@layout/fragment_nineteenth" >
+        tools:layout="@layout/word_scrabble_two_a" >
         <action
-            android:id="@+id/nineteenth_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/scrabbletwoa_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/nineteenth_to_twentieth"
-            app:destination="@id/twentiethFragment" />
+            android:id="@+id/scrabbletwoa_to_scrabblethreea"
+            app:destination="@id/ScrabbleThreeA" />
         <action
-            android:id="@+id/nineteenth_to_twentysecond"
-            app:destination="@id/twentySecondFragment" />
+            android:id="@+id/scrabbletwoa_to_scrabbletwob"
+            app:destination="@id/ScrabbleTwoB" />
     </fragment>
     <fragment
-        android:id="@+id/twentiethFragment"
-        android:name="com.example.neurologicnew.TwentiethFragment"
-        android:label="TwentiethFragment"
-        tools:layout="@layout/fragment_twentieth">
-        <action
-            android:id="@+id/twentieth_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
-        <action
-            android:id="@+id/twentieth_to_twentyfirst"
-            app:destination="@id/twentyFirstFragment" />
-        <action
-            android:id="@+id/twentieth_to_twentysecond"
-            app:destination="@id/twentySecondFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/twentyFirstFragment"
-        android:name="com.example.neurologicnew.TwentyFirstFragment"
+        android:id="@+id/ScrabbleTwoB"
+        android:name="com.example.neurologicnew.WordScrabbleTwoB"
         android:label="TwentyFirstFragment"
-        tools:layout="@layout/fragment_twenty_first" >
+        tools:layout="@layout/word_scrabble_two_b" >
         <action
-            android:id="@+id/twentyfirst_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/scrabbletwob_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/twentyfirst_to_twentysecond"
-            app:destination="@id/twentySecondFragment" />
+            android:id="@+id/scrabbletwob_to_scrabblethreea"
+            app:destination="@id/ScrabbleThreeA" />
     </fragment>
     <fragment
-        android:id="@+id/twentySecondFragment"
-        android:name="com.example.neurologicnew.TwentySecondFragment"
+        android:id="@+id/ScrabbleThreeA"
+        android:name="com.example.neurologicnew.WordScrabbleThreeA"
         android:label="TwentySecondFragment"
-        tools:layout="@layout/fragment_twenty_second">
+        tools:layout="@layout/word_scrabble_three_a">
         <action
-            android:id="@+id/twentysecond_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/scrabblethreea_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/twentysecond_to_twentythird"
-            app:destination="@id/twentyThirdFragment" />
+            android:id="@+id/scrabblethreea_to_scrabblethreeb"
+            app:destination="@id/ScrabbleThreeB" />
         <action
-            android:id="@+id/twentysecond_to_twentyfourth"
-            app:destination="@id/twentyFourthFragment" />
+            android:id="@+id/scrabblethreea_to_scrabblecomplete"
+            app:destination="@id/ScrabbleComplete" />
     </fragment>
     <fragment
-        android:id="@+id/twentyThirdFragment"
-        android:name="com.example.neurologicnew.TwentyThirdFragment"
+        android:id="@+id/ScrabbleThreeB"
+        android:name="com.example.neurologicnew.WordScrabbleThreeB"
         android:label="TwentyThirdFragment"
-        tools:layout="@layout/fragment_twenty_third" >
+        tools:layout="@layout/word_scrabble_three_b" >
         <action
-            android:id="@+id/twentythird_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/scrabblethreeb_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/twentythird_to_twentyfourth"
-            app:destination="@id/twentyFourthFragment" />
+            android:id="@+id/scrabblethreeb_to_scrabblecomplete"
+            app:destination="@id/ScrabbleComplete" />
     </fragment>
     <fragment
-        android:id="@+id/twentyFourthFragment"
-        android:name="com.example.neurologicnew.TwentyFourthFragment"
+        android:id="@+id/ScrabbleComplete"
+        android:name="com.example.neurologicnew.WordScrabbleComplete"
         android:label="TwentyFourthFragment"
-        tools:layout="@layout/fragment_twenty_fourth" >
+        tools:layout="@layout/word_scrabble_complete" >
         <action
-            android:id="@+id/twentyfourth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/scrabblecomplete_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/twentyFifthFragment"
-        android:name="com.example.neurologicnew.TwentyFifthFragment"
+        android:id="@+id/anagramOneA"
+        android:name="com.example.neurologicnew.WordAnagramOneA"
         android:label="TwentyFifthFragment"
-        tools:layout="@layout/fragment_twenty_fifth" >
+        tools:layout="@layout/word_anagram_one_a" >
         <action
-            android:id="@+id/twentyfifth_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/anagramonea_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/twentyfifth_to_twentysixth"
-            app:destination="@id/twentySixthFragment" />
+            android:id="@+id/anagramonea_to_anagramoneb"
+            app:destination="@id/anagramOneB" />
         <action
-            android:id="@+id/twentyfifth_to_twentyeighth"
-            app:destination="@id/twentyEighthFragment" />
+            android:id="@+id/anagramonea_to_anagramtwoa"
+            app:destination="@id/anagramTwoA" />
     </fragment>
     <fragment
-        android:id="@+id/twentySixthFragment"
-        android:name="com.example.neurologicnew.TwentySixthFragment"
+        android:id="@+id/anagramOneB"
+        android:name="com.example.neurologicnew.WordAnagramOneB"
         android:label="TwentySixthFragment"
-        tools:layout="@layout/fragment_twenty_sixth" >
+        tools:layout="@layout/word_anagram_one_b" >
         <action
-            android:id="@+id/twentysixth_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/anagramoneb_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/twentysixth_to_twentyseventh"
-            app:destination="@id/twentySeventhFragment" />
+            android:id="@+id/anagramoneb_to_anagramonecomplete"
+            app:destination="@id/anagramonecomplete_to_anagramtwoa" />
         <action
-            android:id="@+id/twentysixth_to_twentyeighth"
-            app:destination="@id/twentyEighthFragment" />
+            android:id="@+id/anagramoneb_to_anagramtwoa"
+            app:destination="@id/anagramTwoA" />
     </fragment>
     <fragment
-        android:id="@+id/twentySeventhFragment"
-        android:name="com.example.neurologicnew.TwentySeventhFragment"
+        android:id="@+id/anagramonecomplete_to_anagramtwoa"
+        android:name="com.example.neurologicnew.WordAnagramOneComplete"
         android:label="TwentySeventhFragment"
-        tools:layout="@layout/fragment_twenty_seventh" >
+        tools:layout="@layout/word_anagram_one_complete" >
         <action
-            android:id="@+id/twentyseventh_to_twentyeighth"
-            app:destination="@id/twentyEighthFragment" />
+            android:id="@+id/anagramonecomplete_to_anagramtwoa"
+            app:destination="@id/anagramTwoA" />
     </fragment>
     <fragment
-        android:id="@+id/twentyEighthFragment"
-        android:name="com.example.neurologicnew.TwentyEighthFragment"
+        android:id="@+id/anagramTwoA"
+        android:name="com.example.neurologicnew.WordAnagramTwoA"
         android:label="TwentyEighthFragment"
-        tools:layout="@layout/fragment_twenty_eighth" >
+        tools:layout="@layout/word_anagram_two_a" >
         <action
-            android:id="@+id/twentyeighth_to_fifteen"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/anagramtwoa_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/action_twentyEighthFragment_self"
-            app:destination="@id/twentyEighthFragment" />
+            android:id="@+id/anagramtwoa_to_anagramtwob"
+            app:destination="@id/anagramTwoB" />
         <action
-            android:id="@+id/twentyeighth_to_twentyninth"
-            app:destination="@id/twentyNinthFragment" />
-        <action
-            android:id="@+id/twentyeighth_to_thirtyfirst"
-            app:destination="@id/thirtyFirstFragment" />
+            android:id="@+id/anagramtwoa_to_anagramthreea"
+            app:destination="@id/anagramThreeA" />
     </fragment>
     <fragment
-        android:id="@+id/twentyNinthFragment"
-        android:name="com.example.neurologicnew.TwentyNinthFragment"
+        android:id="@+id/anagramTwoB"
+        android:name="com.example.neurologicnew.WordAnagramTwoB"
         android:label="TwentyNinthFragment"
-        tools:layout="@layout/fragment_twenty_ninth" >
+        tools:layout="@layout/word_anagram_two_b" >
         <action
-            android:id="@+id/twentyninth_to_fifteen"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/anagramtwob_to_word"
+            app:destination="@id/MenuWordGames" />
         <action
-            android:id="@+id/twentyninth_to_thirtieth"
-            app:destination="@id/thirtiethFragment" />
+            android:id="@+id/anagramtwob_to_anagramtwocomplete"
+            app:destination="@id/anagramTwoComplete" />
+        <action
+            android:id="@+id/anagramtwob_to_anagramthreea"
+            app:destination="@id/anagramThreeA" />
     </fragment>
     <fragment
-        android:id="@+id/thirtiethFragment"
-        android:name="com.example.neurologicnew.ThirtiethFragment"
+        android:id="@+id/anagramTwoComplete"
+        android:name="com.example.neurologicnew.WordAnagramTwoComplete"
         android:label="ThirtiethFragment"
-        tools:layout="@layout/fragment_thirtieth" >
+        tools:layout="@layout/word_anagram_two_complete" >
         <action
-            android:id="@+id/thirtieth_to_thirtyfirst"
-            app:destination="@id/thirtyFirstFragment" />
+            android:id="@+id/anagramtwocomplete_to_anagramthreea"
+            app:destination="@id/anagramThreeA" />
     </fragment>
     <fragment
-        android:id="@+id/thirtyFirstFragment"
-        android:name="com.example.neurologicnew.ThirtyFirstFragment"
+        android:id="@+id/anagramThreeA"
+        android:name="com.example.neurologicnew.WordAnagramThreeA"
         android:label="ThirtyFirstFragment"
-        tools:layout="@layout/fragment_thirty_first" >
+        tools:layout="@layout/word_anagram_three_a" >
         <action
-            android:id="@+id/thirtyfirst_to_thirtysecond"
-            app:destination="@id/thirtySecondFragment" />
+            android:id="@+id/anagramthreea_to_anagramthreeb"
+            app:destination="@id/anagramThreeB" />
         <action
-            android:id="@+id/thirtyfirst_to_thirtyfourth"
-            app:destination="@id/thirtyFourthFragment" />
+            android:id="@+id/anagramthreea_to_anagramactivitycomplete"
+            app:destination="@id/anagramActivityComplete" />
         <action
-            android:id="@+id/thirtyfirst_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/anagramthreea_to_word"
+            app:destination="@id/MenuWordGames" />
     </fragment>
     <fragment
-        android:id="@+id/thirtySecondFragment"
-        android:name="com.example.neurologicnew.ThirtySecondFragment"
+        android:id="@+id/anagramThreeB"
+        android:name="com.example.neurologicnew.WordAnagramThreeB"
         android:label="ThirtySecondFragment"
-        tools:layout="@layout/fragment_thirty_second" >
+        tools:layout="@layout/word_anagram_three_b" >
         <action
-            android:id="@+id/thirtysecond_to_thirtythird"
-            app:destination="@id/thirtyThirdFragment" />
+            android:id="@+id/anagramthreeb_to_anagramthreecomplete"
+            app:destination="@id/anagramThreeComplete" />
         <action
-            android:id="@+id/thirtysecond_to_thirtyfourth"
-            app:destination="@id/thirtyFourthFragment" />
+            android:id="@+id/anagramthreeb_to_anagramactivitycomplete"
+            app:destination="@id/anagramActivityComplete" />
         <action
-            android:id="@+id/thirtysecond_to_fifteenth"
-            app:destination="@id/fifteenthFragment" />
+            android:id="@+id/anagramthreeb_to_word"
+            app:destination="@id/MenuWordGames" />
     </fragment>
     <fragment
-        android:id="@+id/thirtyThirdFragment"
-        android:name="com.example.neurologicnew.ThirtyThirdFragment"
+        android:id="@+id/anagramThreeComplete"
+        android:name="com.example.neurologicnew.WordAnagramThreeComplete"
         android:label="ThirtyThirdFragment"
-        tools:layout="@layout/fragment_thirty_third" >
+        tools:layout="@layout/word_anagram_three_complete" >
         <action
-            android:id="@+id/thirtythird_to_thirtyfourth"
-            app:destination="@id/thirtyFourthFragment" />
+            android:id="@+id/anagramthreecomplete_to_anagramactivitycomplete"
+            app:destination="@id/anagramActivityComplete" />
     </fragment>
     <fragment
-        android:id="@+id/thirtyFourthFragment"
-        android:name="com.example.neurologicnew.ThirtyFourthFragment"
+        android:id="@+id/anagramActivityComplete"
+        android:name="com.example.neurologicnew.WordAnagramActivityComplete"
         android:label="ThirtyFourthFragment"
-        tools:layout="@layout/fragment_thirty_fourth" >
+        tools:layout="@layout/word_anagram_activity_complete" >
         <action
-            android:id="@+id/thirtyfourth_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/anagramactivitycomplete_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
-        android:id="@+id/thirtyFifthFragment"
-        android:name="com.example.neurologicnew.ThirtyFifthFragment"
+        android:id="@+id/PatternGraphOneA"
+        android:name="com.example.neurologicnew.PatternGraphOneA"
         android:label="ThirtyFifthFragment"
-        tools:layout="@layout/fragment_thirty_fifth" >
+        tools:layout="@layout/pattern_graph_one_a" >
         <action
-            android:id="@+id/thirtyfifth_to_fourteenth"
-            app:destination="@id/fourteenthFragment" />
+            android:id="@+id/graphonea_to_pattern"
+            app:destination="@id/menuPatternsGames" />
         <action
-            android:id="@+id/thirtyfifth_to_thirtysixth"
-            app:destination="@id/thirtySixthFragment" />
+            android:id="@+id/graphonea_to_graphoneb"
+            app:destination="@id/PatternGraphOneB" />
     </fragment>
     <fragment
-        android:id="@+id/thirtySixthFragment"
-        android:name="com.example.neurologicnew.ThirtySixthFragment"
+        android:id="@+id/PatternGraphOneB"
+        android:name="com.example.neurologicnew.PatternGraphOneB"
         android:label="ThirtySixthFragment"
-        tools:layout="@layout/fragment_thirty_sixth" >
+        tools:layout="@layout/pattern_graph_one_b" >
         <action
-            android:id="@+id/thirtysixth_to_thirtyseventh"
-            app:destination="@id/thirtySeventhFragment" />
+            android:id="@+id/graphoneb_to_graphonecomplete"
+            app:destination="@id/PatternGraphOneComplete" />
         <action
-            android:id="@+id/thirtysixth_to_fourteenth"
-            app:destination="@id/fourteenthFragment" />
+            android:id="@+id/graphoneb_to_pattern"
+            app:destination="@id/menuPatternsGames" />
     </fragment>
     <fragment
-        android:id="@+id/thirtySeventhFragment"
-        android:name="com.example.neurologicnew.ThirtySeventhFragment"
+        android:id="@+id/PatternGraphOneComplete"
+        android:name="com.example.neurologicnew.PatternGraphOneComplete"
         android:label="ThirtySeventhFragment"
-        tools:layout="@layout/fragment_thirty_seventh" >
+        tools:layout="@layout/pattern_graph_one_complete" >
         <action
-            android:id="@+id/thirtyseventh_to_fortyone"
-            app:destination="@id/fortyOneFragment" />
+            android:id="@+id/graphonecomplete_to_graphtwoa"
+            app:destination="@id/PatternGraphTwoA" />
     </fragment>
     <fragment
-        android:id="@+id/thirtyEighthFragment"
-        android:name="com.example.neurologicnew.ThirtyEighthFragment"
+        android:id="@+id/PatternGraphThreeA"
+        android:name="com.example.neurologicnew.PatternGraphThreeA"
         android:label="ThirtyEighthFragment"
-        tools:layout="@layout/fragment_thirty_eighth" >
+        tools:layout="@layout/pattern_graph_three_a" >
         <action
-            android:id="@+id/thirtyeighth_to_fourteenth"
-            app:destination="@id/fourteenthFragment" />
+            android:id="@+id/graphthreea_to_pattern"
+            app:destination="@id/menuPatternsGames" />
         <action
-            android:id="@+id/thirtyeighth_to_thirtyninth"
-            app:destination="@id/thirtyNinthFragment" />
+            android:id="@+id/graphthreea_to_graphthreeb"
+            app:destination="@id/PatternGraphThreeB" />
     </fragment>
     <fragment
-        android:id="@+id/thirtyNinthFragment"
-        android:name="com.example.neurologicnew.ThirtyNinthFragment"
+        android:id="@+id/PatternGraphThreeB"
+        android:name="com.example.neurologicnew.PatternGraphThreeB"
         android:label="ThirtyNinthFragment"
-        tools:layout="@layout/fragment_thirty_ninth" >
+        tools:layout="@layout/pattern_graph_three_b" >
         <action
-            android:id="@+id/thirtyninth_to_fourteenth"
-            app:destination="@id/fourteenthFragment" />
+            android:id="@+id/graphthreeb_to_pattern"
+            app:destination="@id/menuPatternsGames" />
         <action
-            android:id="@+id/thirtyninth_to_fortieth"
-            app:destination="@id/fortiethFragment" />
+            android:id="@+id/graphthreeb_to_graphthreecomplete"
+            app:destination="@id/PatternGraphThreeComplete" />
     </fragment>
     <fragment
-        android:id="@+id/fortiethFragment"
-        android:name="com.example.neurologicnew.FortiethFragment"
+        android:id="@+id/PatternGraphThreeComplete"
+        android:name="com.example.neurologicnew.PatternGraphThreeComplete"
         android:label="FortiethFragment"
-        tools:layout="@layout/fragment_fortieth" >
+        tools:layout="@layout/pattern_graph_three_complete" >
         <action
-            android:id="@+id/fortieth_to_fourtyfour"
-            app:destination="@id/fortyFourFragment" />
+            android:id="@+id/graphthreecomplete_to_graphactivitycomplete"
+            app:destination="@id/PatternGraphActivityComplete" />
     </fragment>
     <fragment
-        android:id="@+id/fortyOneFragment"
-        android:name="com.example.neurologicnew.FortyOneFragment"
+        android:id="@+id/PatternGraphTwoA"
+        android:name="com.example.neurologicnew.PatternGraphTwoA"
         android:label="FortyOneFragment"
-        tools:layout="@layout/fragment_forty_one" >
+        tools:layout="@layout/pattern_graph_two_a" >
         <action
-            android:id="@+id/fortyone_to_fourteenth"
-            app:destination="@id/fourteenthFragment" />
+            android:id="@+id/graphtwob_to_pattern"
+            app:destination="@id/menuPatternsGames" />
         <action
-            android:id="@+id/fortyone_to_fortytwo"
-            app:destination="@id/fortyTwoFragment" />
+            android:id="@+id/graphtwoa_to_graphtwob"
+            app:destination="@id/PatternGraphTwoB" />
     </fragment>
     <fragment
-        android:id="@+id/fortyTwoFragment"
-        android:name="com.example.neurologicnew.FortyTwoFragment"
+        android:id="@+id/PatternGraphTwoB"
+        android:name="com.example.neurologicnew.PatternGraphTwoB"
         android:label="FortyTwoFragment"
-        tools:layout="@layout/fragment_forty_two" >
+        tools:layout="@layout/pattern_graph_two_b" >
         <action
-            android:id="@+id/fortytwo_to_fourteenth"
-            app:destination="@id/fourteenthFragment" />
+            android:id="@+id/graphtwob_to_pattern"
+            app:destination="@id/menuPatternsGames" />
         <action
-            android:id="@+id/fortytwo_to_fortythree"
-            app:destination="@id/fortyThreeFragment" />
+            android:id="@+id/graphtwob_to_graphtwocomplete"
+            app:destination="@id/PatternGraphTwoComplete" />
     </fragment>
     <fragment
-        android:id="@+id/fortyThreeFragment"
-        android:name="com.example.neurologicnew.FortyThreeFragment"
+        android:id="@+id/PatternGraphTwoComplete"
+        android:name="com.example.neurologicnew.PatternGraphTwoComplete"
         android:label="FortyThreeFragment"
-        tools:layout="@layout/fragment_forty_three" >
+        tools:layout="@layout/pattern_graph_two_complete" >
         <action
-            android:id="@+id/fortythree_to_thirtyeight"
-            app:destination="@id/thirtyEighthFragment" />
+            android:id="@+id/graphtwocomplete_to_graphthreea"
+            app:destination="@id/PatternGraphThreeA" />
     </fragment>
     <fragment
-        android:id="@+id/fortyFourFragment"
-        android:name="com.example.neurologicnew.FortyFourFragment"
+        android:id="@+id/PatternGraphActivityComplete"
+        android:name="com.example.neurologicnew.PatternGraphActivityComplete"
         android:label="FortyFourFragment"
-        tools:layout="@layout/fragment_forty_fourth" >
+        tools:layout="@layout/pattern_graph_activity_complete" >
         <action
-            android:id="@+id/fourtyfour_to_eleventh"
-            app:destination="@id/eleventhFragment" />
+            android:id="@+id/graphactivitycomplete_to_home"
+            app:destination="@id/homeScreen" />
     </fragment>
 </navigation>
